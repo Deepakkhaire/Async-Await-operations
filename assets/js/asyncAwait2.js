@@ -9,12 +9,12 @@ const data = document.getElementById("data");
 function creatBlog(blog) {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
-            let result = Math.random() >= .5 ? true : false;
+            let result = Math.random() >= .3 ? true : false;
             if(result){
                 blogs.push(blog)
                 resolve("Blogs are created successfully...!!")
             }else{
-                reject("something went wrong...!!")
+                reject("Something went wrong...!!")
             }
         }, 3000);
     })
@@ -23,11 +23,11 @@ function creatBlog(blog) {
 function fetchdata() {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
-            let result = Math.random() >= .5 ? true : false;
+            let result = Math.random() >= .3 ? true : false;
             if(result){
-                resolve("Blogs are fetched successfully...!!")
+                resolve("Blogs are Fetched Successfully...!!")
             }else{
-                reject("something went wrong while fetching blogs...!!")
+                reject("Something went wrong while fetching blogs...!!")
             }
         }, 1000);
     })
